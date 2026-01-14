@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "[Patient Name]",
+    "occupation": "Business Professional",
+    "review": "Visited Lotus Dental and was impressed. They knew their job well and I got laser treatment for my gums done very efficiently and painless. Moreover they follow the Covid safety guidelines very strictly and the overall ambience provides comfort and safety!",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "[Patient Name]",
+    "occupation": "Teacher",
+    "review": "Excellent dental care facility with modern equipment and highly skilled doctors. The staff is very friendly and professional. I had my root canal treatment done here and it was completely painless. Highly recommended!",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "[Patient Name]",
+    "occupation": "Software Engineer",
+    "review": "Best dental clinic in the area! The doctors take time to explain everything and make you feel comfortable. I've been coming here for regular check-ups and cleanings for the past 2 years. Very satisfied with their service.",
+    "rating": 5
+  }
+]

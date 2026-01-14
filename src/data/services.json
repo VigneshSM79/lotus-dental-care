@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "General Dentistry",
+    "description": "Comprehensive dental care including regular check-ups, cleanings, and preventive treatments to maintain optimal oral health.",
+    "image": "/images/services/general-dentistry.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Root Canal Treatment",
+    "description": "Advanced endodontic procedures to save infected teeth and eliminate pain with modern, comfortable techniques.",
+    "image": "/images/services/root-canal.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Dental Implants",
+    "description": "Permanent tooth replacement solutions using titanium implants for natural-looking, long-lasting results.",
+    "image": "/images/services/dental-implants.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Teeth Replacement",
+    "description": "Complete restoration options including bridges, dentures, and implant-supported prosthetics.",
+    "image": "/images/services/teeth-replacement.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Teeth Alignment",
+    "description": "Orthodontic treatments including braces and clear aligners to straighten teeth and improve bite alignment.",
+    "image": "/images/services/teeth-alignment.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Oral Surgery",
+    "description": "Surgical procedures including wisdom tooth extraction and jaw surgery performed with precision and care.",
+    "image": "/images/services/oral-surgery.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Cosmetic Dentistry",
+    "description": "Aesthetic treatments including teeth whitening, veneers, and smile makeovers to enhance your appearance.",
+    "image": "/images/services/cosmetic-dentistry.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Full Mouth Rehabilitation",
+    "description": "Comprehensive treatment plans to restore function, health, and aesthetics of your entire mouth.",
+    "image": "/images/services/full-mouth-rehab.jpg"
+  }
+]
