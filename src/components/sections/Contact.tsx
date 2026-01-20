@@ -55,7 +55,7 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             {/* Contact Information */}
             <div className="bg-primary text-white p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
@@ -66,9 +66,9 @@ export default function Contact() {
                   <div>
                     <p className="font-semibold mb-1">Address</p>
                     <p className="text-gray-200">
-                      [Clinic Address]
+                      LIG Phase I & II, Plot No:1853 TNHB,
                       <br />
-                      [City, State - PIN Code]
+                      Ayapakkam, Chennai - 600077
                     </p>
                   </div>
                 </div>
@@ -78,10 +78,10 @@ export default function Contact() {
                   <div>
                     <p className="font-semibold mb-1">Phone</p>
                     <a
-                      href="tel:+911234567890"
+                      href="tel:+917200849216"
                       className="text-gray-200 hover:text-white"
                     >
-                      +91 123 456 7890
+                      7200849216
                     </a>
                   </div>
                 </div>
@@ -104,9 +104,9 @@ export default function Contact() {
                   <div>
                     <p className="font-semibold mb-1">Hours</p>
                     <p className="text-gray-200">
-                      Mon - Sat: 9:00 AM - 8:00 PM
+                      Mon - Sat: 10:00 AM - 1:00 PM
                       <br />
-                      Sunday: 10:00 AM - 2:00 PM
+                      Mon - Sat: 5:00 PM - 9:00 PM
                     </p>
                   </div>
                 </div>
@@ -210,6 +210,21 @@ export default function Contact() {
                 )}
               </form>
             </div>
+          </div>
+
+          {/* Google Map */}
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.8693855126803!2d80.1308311!3d13.1074599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526245bddd8a11%3A0x22d8755236dd395a!2sLotus%20Multispeciality%20Dental%20Care!5e0!3m2!1sen!2sin!4v1768884464382!5m2!1sen!2sin"
+              width="100%"
+              height="350"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Lotus Dental Care Location"
+              className="w-full"
+            ></iframe>
           </div>
         </div>
       </div>

@@ -36,16 +36,9 @@ export default function Team() {
                 <p className="text-primary-blue font-semibold mb-2">
                   {doctor.designation}
                 </p>
-                <p className="text-sm text-gray-600 mb-2">
+                <p className="text-sm text-gray-600">
                   {doctor.qualifications}
                 </p>
-                <p className="text-sm font-semibold text-gray-700 mb-3">
-                  Specialization: {doctor.specialization}
-                </p>
-                <p className="text-sm text-gray-600 mb-3">
-                  Experience: {doctor.experience}
-                </p>
-                <p className="text-gray-700 leading-relaxed">{doctor.bio}</p>
               </div>
             </div>
           ))}

@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative h-[600px] flex items-center justify-center bg-gradient-to-r from-primary to-primary-blue mt-20">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-primary to-primary-blue pt-24">
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black opacity-30"></div>
 

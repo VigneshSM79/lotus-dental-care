@@ -2,49 +2,71 @@
   {
     "id": 1,
     "title": "General Dentistry",
+    "slug": "general-dentistry",
     "description": "Comprehensive dental care including regular check-ups, cleanings, and preventive treatments to maintain optimal oral health.",
     "image": "/images/services/general-dentistry.jpg"
   },
   {
     "id": 2,
-    "title": "Root Canal Treatment",
-    "description": "Advanced endodontic procedures to save infected teeth and eliminate pain with modern, comfortable techniques.",
-    "image": "/images/services/root-canal.jpg"
+    "title": "Cosmetic Dentistry",
+    "slug": "cosmetic-dentistry",
+    "description": "Aesthetic treatments including teeth whitening, veneers, and smile makeovers to enhance your appearance and boost confidence.",
+    "image": "/images/services/cosmetic-dentistry.jpg"
   },
   {
     "id": 3,
-    "title": "Dental Implants",
-    "description": "Permanent tooth replacement solutions using titanium implants for natural-looking, long-lasting results.",
-    "image": "/images/services/dental-implants.jpg"
+    "title": "Root Treatment",
+    "slug": "root-treatment",
+    "description": "Advanced endodontic procedures to save infected teeth and eliminate pain with modern, comfortable techniques.",
+    "image": "/images/services/root-treatment.jpg"
   },
   {
     "id": 4,
-    "title": "Teeth Replacement",
-    "description": "Complete restoration options including bridges, dentures, and implant-supported prosthetics.",
-    "image": "/images/services/teeth-replacement.jpg"
+    "title": "Child Dentistry",
+    "slug": "child-dentistry",
+    "description": "Gentle and friendly dental care for children, focusing on prevention, education, and creating positive dental experiences.",
+    "image": "/images/services/child-dentistry.jpg"
   },
   {
     "id": 5,
-    "title": "Teeth Alignment",
-    "description": "Orthodontic treatments including braces and clear aligners to straighten teeth and improve bite alignment.",
-    "image": "/images/services/teeth-alignment.jpg"
+    "title": "Tooth Replacement",
+    "slug": "tooth-replacement",
+    "description": "Complete restoration options including bridges, dentures, implants, and prosthetics for missing teeth.",
+    "image": "/images/services/tooth-replacement.jpg"
   },
   {
     "id": 6,
     "title": "Oral Surgery",
+    "slug": "oral-surgery",
     "description": "Surgical procedures including wisdom tooth extraction and jaw surgery performed with precision and care.",
     "image": "/images/services/oral-surgery.jpg"
   },
   {
     "id": 7,
-    "title": "Cosmetic Dentistry",
-    "description": "Aesthetic treatments including teeth whitening, veneers, and smile makeovers to enhance your appearance.",
-    "image": "/images/services/cosmetic-dentistry.jpg"
+    "title": "Periodontics",
+    "slug": "periodontics",
+    "description": "Specialized treatment for gum diseases, including deep cleaning, gum surgery, and maintenance of healthy gums.",
+    "image": "/images/services/periodontics.jpg"
   },
   {
     "id": 8,
-    "title": "Full Mouth Rehabilitation",
-    "description": "Comprehensive treatment plans to restore function, health, and aesthetics of your entire mouth.",
-    "image": "/images/services/full-mouth-rehab.jpg"
+    "title": "Orthodontics",
+    "slug": "orthodontics",
+    "description": "Teeth straightening treatments including braces and clear aligners to correct misalignment and improve your smile.",
+    "image": "/images/services/orthodontics.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Sleeping Dentistry",
+    "slug": "sleeping-dentistry",
+    "description": "Sedation dentistry options for anxious patients, ensuring comfortable and stress-free dental procedures.",
+    "image": "/images/services/sleeping-dentistry.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Extraction",
+    "slug": "extraction",
+    "description": "Safe and painless tooth extraction procedures, including simple and surgical extractions when necessary.",
+    "image": "/images/services/extraction.jpg"
   }
 ]

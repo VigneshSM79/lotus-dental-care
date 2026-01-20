@@ -1,22 +1,22 @@
 [
   {
     "id": 1,
-    "name": "Dr. [To Be Provided]",
-    "designation": "Chief Dental Surgeon",
-    "qualifications": "BDS, MDS",
-    "specialization": "General & Cosmetic Dentistry",
-    "experience": "15+ years",
+    "name": "Dr. R.Ragunathan",
+    "designation": "Chief Consultant - Endodontist",
+    "qualifications": "M.D.S., M.B.A",
+    "specialization": "",
+    "experience": "",
     "image": "/images/team/doctor-1.jpg",
-    "bio": "Leading our team with extensive experience in providing comprehensive dental care with a focus on patient comfort and advanced techniques."
+    "bio": ""
   },
   {
     "id": 2,
-    "name": "Dr. [To Be Provided]",
-    "designation": "Orthodontist",
-    "qualifications": "BDS, MDS (Orthodontics)",
-    "specialization": "Teeth Alignment & Braces",
-    "experience": "10+ years",
+    "name": "Dr. C.Pushya Mithra",
+    "designation": "Resident Dentist",
+    "qualifications": "B.D.S., M.B.A",
+    "specialization": "",
+    "experience": "",
     "image": "/images/team/doctor-2.jpg",
-    "bio": "Specialized in creating beautiful smiles through modern orthodontic treatments including traditional braces and clear aligners."
+    "bio": ""
   }
 ]
