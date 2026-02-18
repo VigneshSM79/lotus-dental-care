@@ -4,16 +4,19 @@ export default function GeneralDentistry() {
   const services = [
     {
       title: "Tooth Filling",
+      image: "/images/services/general-dentistry/filling.jpg",
       description:
         "During filling procedures, dentists clean away the decay inside the cavity, usually with a drill, before filling it in. Removing the decay prevents further damage, but it doesn't fix the damage to the tooth that already occurred. That's where fillings come in.",
     },
     {
       title: "Tooth Scaling",
+      image: "/images/services/general-dentistry/scaling.jpg",
       description:
         "Dental scaling is routinely performed to help patients with gum disease and excessive plaque buildup. While a standard cleaning will address the surface of the tooth, scaling goes much deeper. If your dentist suggests dental scaling and root planing for your teeth, it's helpful to know what this means so you can prepare for what's ahead. Scaling is a common dental procedure for patients with gum disease. This is a type of dental cleaning that reaches below the gumline to remove plaque buildup. The process of scaling and root planing the teeth is often referred to as a deep cleaning.",
     },
     {
       title: "Polishing",
+      image: "/images/services/general-dentistry/polishing.jpg",
       description:
         "Tooth polishing is done to smooth the surfaces of teeth and restorations. The purpose of polishing is to remove extrinsic stains, remove dental plaque accumulation, increase aesthetics and to reduce corrosion of metallic restorations. Tooth polishing has little therapeutic value and is usually done as a cosmetic procedure after debridement and before fluoride application.",
     },
@@ -47,20 +50,28 @@ export default function GeneralDentistry() {
                   index % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
               >
-                {/* Image Placeholder */}
+                {/* Image */}
                 <div className="md:w-1/2">
-                  <div className="bg-gradient-to-br from-primary to-primary-blue rounded-lg h-64 md:h-80 flex items-center justify-center">
-                    <div className="text-center text-white">
-                      <svg
-                        className="w-16 h-16 mx-auto mb-2 opacity-50"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 1.5.7 2.8 1.8 3.7-.3.2-.5.4-.8.6-1.1.8-1.8 2-2.2 3.3-.4 1.5-.3 3 .3 4.4.5 1.2 1.4 2.2 2.5 2.9 1 .6 2.2.9 3.4.9s2.4-.3 3.4-.9c1.1-.7 2-1.7 2.5-2.9.6-1.4.7-2.9.3-4.4-.4-1.3-1.1-2.5-2.2-3.3-.3-.2-.5-.4-.8-.6 1.1-.9 1.8-2.2 1.8-3.7C16.5 4 14.5 2 12 2z" />
-                      </svg>
-                      <p className="text-sm opacity-75">Image Placeholder</p>
+                  {service.image ? (
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="rounded-lg w-full h-64 md:h-80 object-cover"
+                    />
+                  ) : (
+                    <div className="bg-gradient-to-br from-primary to-primary-blue rounded-lg h-64 md:h-80 flex items-center justify-center">
+                      <div className="text-center text-white">
+                        <svg
+                          className="w-16 h-16 mx-auto mb-2 opacity-50"
+                          fill="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 1.5.7 2.8 1.8 3.7-.3.2-.5.4-.8.6-1.1.8-1.8 2-2.2 3.3-.4 1.5-.3 3 .3 4.4.5 1.2 1.4 2.2 2.5 2.9 1 .6 2.2.9 3.4.9s2.4-.3 3.4-.9c1.1-.7 2-1.7 2.5-2.9.6-1.4.7-2.9.3-4.4-.4-1.3-1.1-2.5-2.2-3.3-.3-.2-.5-.4-.8-.6 1.1-.9 1.8-2.2 1.8-3.7C16.5 4 14.5 2 12 2z" />
+                        </svg>
+                        <p className="text-sm opacity-75">Image coming soon</p>
+                      </div>
                     </div>
-                  </div>
+                  )}
                 </div>
 
                 {/* Content */}

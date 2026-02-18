@@ -3,7 +3,7 @@ import services from "@/data/services.json";
 
 export default function Services() {
   return (
-    <section id="services" className="py-16 bg-primary">
+    <section id="services" className="py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-white mb-4">
@@ -21,11 +21,12 @@ export default function Services() {
               className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group p-6 flex flex-col items-center text-center"
             >
               {/* Service Icon */}
-              <div className="w-20 h-20 bg-primary-blue rounded-xl flex items-center justify-center mb-4">
-                <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C9.5 2 7.5 4 7.5 6.5c0 1.5.7 2.8 1.8 3.7-.3.2-.5.4-.8.6-1.1.8-1.8 2-2.2 3.3-.4 1.5-.3 3 .3 4.4.5 1.2 1.4 2.2 2.5 2.9 1 .6 2.2.9 3.4.9s2.4-.3 3.4-.9c1.1-.7 2-1.7 2.5-2.9.6-1.4.7-2.9.3-4.4-.4-1.3-1.1-2.5-2.2-3.3-.3-.2-.5-.4-.8-.6 1.1-.9 1.8-2.2 1.8-3.7C16.5 4 14.5 2 12 2zm0 2c1.4 0 2.5 1.1 2.5 2.5S13.4 9 12 9s-2.5-1.1-2.5-2.5S10.6 4 12 4z"/>
-                  <circle cx="9" cy="6" r="1" fill="white" opacity="0.5"/>
-                </svg>
+              <div className="w-20 h-20 rounded-xl overflow-hidden mb-4">
+                <img
+                  src="/images/tooth-icon.png"
+                  alt="Dental Service"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Service Title */}

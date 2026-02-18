@@ -20,11 +20,8 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="relative bg-primary text-white py-16 overflow-hidden">
-      {/* Background overlay with subtle pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary-blue opacity-90"></div>
-
-      <div className="relative container mx-auto px-4 z-10">
+    <section className="text-white py-16">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Why Choose Us?</h2>
           <p className="text-xl text-gray-200">

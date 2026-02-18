@@ -17,7 +17,7 @@ export default function AboutUsModal({ isOpen, onClose }: AboutUsModalProps) {
       ></div>
 
       {/* Modal Content - 90% of page */}
-      <div className="relative bg-white w-[95%] lg:w-[90%] h-[90%] rounded-lg shadow-2xl overflow-y-auto">
+      <div className="relative bg-white w-[95%] lg:w-[75%] max-h-[90%] rounded-lg shadow-2xl overflow-y-auto">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -28,7 +28,7 @@ export default function AboutUsModal({ isOpen, onClose }: AboutUsModalProps) {
           </svg>
         </button>
 
-        <div className="flex flex-col lg:flex-row min-h-full">
+        <div className="flex flex-col lg:flex-row">
           {/* Main Content */}
           <div className="flex-1 p-8 lg:p-16 lg:pr-8">
             {/* About Us */}
@@ -62,8 +62,8 @@ export default function AboutUsModal({ isOpen, onClose }: AboutUsModalProps) {
             <div className="mb-8">
               <h4 className="flex items-center gap-2 text-lg font-bold text-gray-800 mb-4">
                 <svg className="w-5 h-5 text-primary-blue" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <circle cx="12" cy="12" r="9"/>
-                  <path strokeLinecap="round" d="M12 7v5l3.5 2"/>
+                  <circle cx="12" cy="12" r="9" />
+                  <path strokeLinecap="round" d="M12 7v5l3.5 2" />
                 </svg>
                 Opening Hours
               </h4>
@@ -76,10 +76,7 @@ export default function AboutUsModal({ isOpen, onClose }: AboutUsModalProps) {
                   <span className="text-gray-600">Mon - Sat (Evening)</span>
                   <span className="text-gray-800 font-medium">5:00 PM - 9:00 PM</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Sunday</span>
-                  <span className="text-gray-800 font-medium">By Appointment</span>
-                </div>
+
               </div>
             </div>
 
@@ -87,7 +84,7 @@ export default function AboutUsModal({ isOpen, onClose }: AboutUsModalProps) {
             <div className="bg-white p-4 rounded-lg border border-gray-200">
               <h4 className="flex items-center gap-2 text-lg font-bold text-gray-800 mb-2">
                 <svg className="w-5 h-5 text-primary-blue" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 Need Help?
               </h4>

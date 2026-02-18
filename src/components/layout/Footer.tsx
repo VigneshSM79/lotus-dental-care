@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-gradient-to-br from-primary to-primary-blue text-white">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* About Section */}
@@ -28,8 +28,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <span>✉️</span>
-                <a href="mailto:info@lotusdentalcare.com" className="hover:text-primary-blue transition-colors">
-                  info@lotusdentalcare.com
+                <a href="mailto:lotusdentists@gmail.com" className="hover:text-primary-blue transition-colors">
+                  lotusdentists@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
