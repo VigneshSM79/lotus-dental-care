@@ -1,14 +1,18 @@
 export default function Hero() {
   return (
     <div>
-      {/* Top: Full-width sharp image */}
+      {/* Top: Full-width looping video */}
       <div className="pt-24">
-        <div className="w-full h-[65vh] overflow-hidden">
-          <img
-            src="/images/hero-bg.jpg"
-            alt="Lotus Dental Care Clinic"
-            className="w-full h-full object-cover object-center"
-          />
+        <div className="w-full h-[calc(100vh-6rem)] overflow-hidden relative">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src="/hero-video.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
 

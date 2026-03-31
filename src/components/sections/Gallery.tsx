@@ -1,26 +1,20 @@
+import Image from "next/image";
+
 export default function Gallery() {
   const images = [
-    {
-      src: "/images/gallery/gallery1.jpg",
-      caption: "Patient Waiting Lounge",
-      description: "A comfortable, welcoming space for our patients",
-    },
-    {
-      src: "/images/gallery/gallery2.jpg",
-      caption: "Treatment Room 1",
-      description: "Fully equipped with modern dental technology",
-    },
-    {
-      src: "/images/gallery/gallery3.jpg",
-      caption: "Treatment Room 2",
-      description: "State-of-the-art equipment for precise care",
-    },
+    { src: "/images/gallery/d1.webp", alt: "Lotus Dental reception and waiting area", width: 1200, height: 900 },
+    { src: "/images/gallery/d2.webp", alt: "Spacious waiting lounge with modern interiors", width: 1200, height: 1600 },
+    { src: "/images/gallery/d3.webp", alt: "Lotus Dental doctors and specialists board", width: 1200, height: 1600 },
+    { src: "/images/gallery/d5.webp", alt: "Child-friendly dental treatment room", width: 1200, height: 1600 },
+    { src: "/images/gallery/d6.webp", alt: "Treatment room with calming galaxy ceiling art", width: 1200, height: 1600 },
+    { src: "/images/gallery/d7.webp", alt: "Fully equipped dental treatment room", width: 1200, height: 1600 },
+    { src: "/images/gallery/d8.webp", alt: "Treatment room with nature-themed ceiling", width: 1200, height: 1600 },
+    { src: "/images/gallery/d9.webp", alt: "Modern dental treatment room with advanced equipment", width: 1200, height: 1600 },
   ];
 
   return (
     <section id="gallery" className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
             Take a Look Inside Our Clinic
@@ -30,36 +24,21 @@ export default function Gallery() {
           </p>
         </div>
 
-        {/* 3-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer"
-            >
-              {/* Image */}
-              <img
-                src={image.src}
-                alt={image.caption}
-                className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-
-              {/* Overlay on hover */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent opacity-0 group-hover:opacity-95 transition-opacity duration-400 flex flex-col justify-end p-6">
-                <h3 className="text-white text-xl font-bold mb-1">
-                  {image.caption}
-                </h3>
-                <p className="text-blue-100 text-sm">
-                  {image.description}
-                </p>
-              </div>
-
-              {/* Always-visible caption bar at bottom */}
-              <div className="absolute bottom-0 left-0 right-0 bg-primary/80 group-hover:opacity-0 transition-opacity duration-300 px-4 py-3">
-                <p className="text-white text-sm font-semibold text-center">
-                  {image.caption}
-                </p>
-              </div>
+        <div className="max-w-6xl mx-auto space-y-4">
+          {[0, 2, 4, 6].map((startIndex) => (
+            <div key={startIndex} className="grid grid-cols-2 gap-4">
+              {images.slice(startIndex, startIndex + 2).map((image, index) => (
+                <div key={index} className="overflow-hidden rounded-xl shadow-lg">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    className="w-full h-[250px] md:h-[400px] object-cover hover:scale-105 transition-transform duration-500"
+                    priority={startIndex === 0}
+                  />
+                </div>
+              ))}
             </div>
           ))}
         </div>
