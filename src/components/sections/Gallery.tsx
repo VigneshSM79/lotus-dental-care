@@ -3,6 +3,7 @@ import Image from "next/image";
 export default function Gallery() {
   const images = [
     { src: "/images/gallery/d1.webp", alt: "Lotus Dental reception and waiting area", width: 1200, height: 900 },
+    { src: "/images/gallery/dd10.webp", alt: "Lotus Dental waiting lounge with sofa seating", width: 1200, height: 901 },
     { src: "/images/gallery/d2.webp", alt: "Spacious waiting lounge with modern interiors", width: 1200, height: 1600 },
     { src: "/images/gallery/d3.webp", alt: "Lotus Dental doctors and specialists board", width: 1200, height: 1600 },
     { src: "/images/gallery/d5.webp", alt: "Child-friendly dental treatment room", width: 1200, height: 1600 },
@@ -25,22 +26,25 @@ export default function Gallery() {
         </div>
 
         <div className="max-w-6xl mx-auto space-y-4">
-          {[0, 2, 4, 6].map((startIndex) => (
-            <div key={startIndex} className="grid grid-cols-2 gap-4">
-              {images.slice(startIndex, startIndex + 2).map((image, index) => (
-                <div key={index} className="overflow-hidden rounded-xl shadow-lg">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={image.width}
-                    height={image.height}
-                    className="w-full h-[250px] md:h-[400px] object-cover hover:scale-105 transition-transform duration-500"
-                    priority={startIndex === 0}
-                  />
-                </div>
-              ))}
-            </div>
-          ))}
+          {Array.from({ length: Math.ceil(images.length / 2) }, (_, i) => i * 2).map((startIndex) => {
+            const row = images.slice(startIndex, startIndex + 2);
+            return (
+              <div key={startIndex} className="grid grid-cols-2 gap-4">
+                {row.map((image, index) => (
+                  <div key={index} className={`overflow-hidden rounded-xl shadow-lg ${row.length === 1 ? "col-span-2" : ""}`}>
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={image.width}
+                      height={image.height}
+                      className="w-full h-[250px] md:h-[400px] object-cover hover:scale-105 transition-transform duration-500"
+                      priority={startIndex === 0}
+                    />
+                  </div>
+                ))}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
