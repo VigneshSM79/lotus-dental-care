@@ -3,13 +3,13 @@ export default function Hero() {
     <div>
       {/* Top: Full-width looping video */}
       <div className="pt-24">
-        <div className="w-full h-[calc(100vh-6rem)] overflow-hidden relative">
+        <div className="w-full h-[calc(100vh-6rem)] overflow-hidden relative bg-black">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           >
             <source src="/hero-video.mp4" type="video/mp4" />
           </video>
