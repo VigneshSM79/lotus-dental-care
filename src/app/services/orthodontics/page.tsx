@@ -1,8 +1,9 @@
 import Link from "next/link";
+import ToothBullet from "@/components/ui/ToothBullet";
 
 export default function Orthodontics() {
   return (
-    <main className="pt-24 bg-white">
+    <main className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-blue py-10">
         <div className="container mx-auto px-4">
@@ -23,7 +24,7 @@ export default function Orthodontics() {
           <div className="max-w-4xl mx-auto">
 
             {/* Title */}
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-primary-blue pb-2 mb-6 inline-block">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-accent pb-2 mb-6 inline-block">
               Orthodontics
             </h2>
 
@@ -50,27 +51,27 @@ export default function Orthodontics() {
             </h3>
             <ul className="text-gray-600 leading-relaxed space-y-2 mb-10">
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Overcrowded or crooked teeth</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Overbite — upper front teeth overlapping the lower front teeth excessively</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Underbite — lower teeth protruding beyond the upper front teeth</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Crossbite — upper and lower jaws misaligned laterally</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Open bite — space between the upper and lower teeth when biting</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Gaps and spacing between teeth</span>
               </li>
             </ul>

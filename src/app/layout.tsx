@@ -1,22 +1,28 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fraunces, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fraunces = Fraunces({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const hankenGrotesk = Hanken_Grotesk({
+  variable: "--font-body",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Lotus Dental Care - Comprehensive Dental Services",
-  description: "Providing world-class dental care with experienced professionals, modern technology, and a patient-first approach. Your trusted dental clinic for all your oral health needs.",
+  title: "Lotus Dental Care — Multispeciality Dental Clinic in Ayapakkam, Chennai",
+  description:
+    "Specialist dental care under one roof in Ayapakkam, Chennai — root canals, implants, orthodontics, smile makeovers and more. Modern, painless, patient-first treatment by experienced doctors.",
 };
 
 export default function RootLayout({
@@ -26,12 +32,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${fraunces.variable} ${hankenGrotesk.variable}`} suppressHydrationWarning>
         <Header />
         {children}
         <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   );

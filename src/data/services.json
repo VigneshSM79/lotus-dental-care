@@ -4,14 +4,14 @@
     "title": "General Dentistry",
     "slug": "general-dentistry",
     "description": "Comprehensive dental care including regular check-ups, cleanings, and preventive treatments to maintain optimal oral health.",
-    "image": "/images/services/general-dentistry.jpg"
+    "image": "/images/services/general-dentistry/scaling.jpg"
   },
   {
     "id": 2,
     "title": "Cosmetic Dentistry",
     "slug": "cosmetic-dentistry",
     "description": "Aesthetic treatments including teeth whitening, veneers, and smile makeovers to enhance your appearance and boost confidence.",
-    "image": "/images/services/cosmetic-dentistry.jpg"
+    "image": "/images/services/cosmetic-dentistry/smile-designing.jpg"
   },
   {
     "id": 3,

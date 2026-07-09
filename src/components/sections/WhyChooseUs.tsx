@@ -1,50 +1,52 @@
 export default function WhyChooseUs() {
   const features = [
     {
-      icon: "👥",
-      title: "OUR TEAM",
+      title: "Specialist team",
       description:
-        "Lotus Dental Care is led by experienced dental professionals with a dedicated team of young, skilled and highly-qualified doctors, keeping pace with contemporary dentistry using the latest equipment and technology.",
+        "Skilled, highly-qualified doctors keeping pace with contemporary dentistry across every speciality.",
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3Z" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+      ),
     },
     {
-      icon: "💙",
-      title: "OUR MOTTO",
-      quote: "Your Smile, Our Passion, Your Life",
+      title: "Modern & painless",
+      description:
+        "Laser dentistry and the latest equipment make treatment quick, comfortable and stress-free.",
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 7v5l3 2" />
+        </svg>
+      ),
     },
     {
-      icon: "🌟",
-      title: "QUALITY CARE",
+      title: "Patient-first comfort",
       description:
-        "We provide world-class dental care with a focus on patient comfort, safety, and satisfaction. Our modern facility is equipped with advanced technology to ensure the best treatment outcomes.",
+        "Clear explanations, strict hygiene and a calm ambience that puts even anxious patients at ease.",
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z" />
+        </svg>
+      ),
     },
   ];
 
   return (
-    <section className="text-white py-16">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Why Choose Us?</h2>
-          <p className="text-xl text-gray-200">
-            You have a number of reasons to choose us!
-          </p>
+    <section className="sec panel why">
+      <div className="wrap">
+        <div className="head">
+          <span className="eyebrow">Why patients choose us</span>
+          <h2>Dentistry that feels calm and careful</h2>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <div key={index} className="text-center">
-              <div className="text-5xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold mb-4 tracking-wider">
-                {feature.title}
-              </h3>
-              {feature.quote ? (
-                <p className="text-lg italic text-gray-200">
-                  &ldquo;{feature.quote}&rdquo;
-                </p>
-              ) : (
-                <p className="text-gray-200 leading-relaxed">
-                  {feature.description}
-                </p>
-              )}
+        <div className="grid">
+          {features.map((f) => (
+            <div className="item" key={f.title}>
+              <div className="ic">{f.icon}</div>
+              <h3>{f.title}</h3>
+              <p>{f.description}</p>
             </div>
           ))}
         </div>

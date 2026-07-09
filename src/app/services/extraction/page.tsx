@@ -1,8 +1,9 @@
 import Link from "next/link";
+import ToothBullet from "@/components/ui/ToothBullet";
 
 export default function Extraction() {
   return (
-    <main className="pt-24 bg-white">
+    <main className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-blue py-10">
         <div className="container mx-auto px-4">
@@ -23,7 +24,7 @@ export default function Extraction() {
           <div className="max-w-4xl mx-auto">
 
             {/* Title */}
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-primary-blue pb-2 mb-6 inline-block">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-accent pb-2 mb-6 inline-block">
               Extraction
             </h2>
 
@@ -50,27 +51,27 @@ export default function Extraction() {
             </h3>
             <ul className="text-gray-600 leading-relaxed space-y-2 mb-10">
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Severe tooth decay that cannot be restored with a filling or crown</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Advanced gum disease causing loosening of the tooth</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Impacted or partially erupted wisdom teeth causing pain or infection</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Overcrowding — creating space prior to orthodontic treatment</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Broken or cracked teeth that cannot be repaired</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Retained baby teeth blocking permanent teeth from erupting</span>
               </li>
             </ul>
@@ -100,23 +101,23 @@ export default function Extraction() {
             </p>
             <ul className="text-gray-600 leading-relaxed space-y-2 mb-12">
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Biting gently on a gauze pad to control bleeding for the first hour</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Avoiding rinsing, spitting, or using a straw for 24 hours</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Eating soft foods and avoiding the extraction site while chewing</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Taking prescribed medications as directed to manage pain and prevent infection</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Attending follow-up appointments to monitor healing</span>
               </li>
             </ul>

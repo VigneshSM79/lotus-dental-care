@@ -32,7 +32,7 @@ export default function AboutUsModal({ isOpen, onClose }: AboutUsModalProps) {
           {/* Main Content */}
           <div className="flex-1 p-8 lg:p-16 lg:pr-8">
             {/* About Us */}
-            <h2 className="text-3xl lg:text-4xl font-bold text-primary-blue border-b-2 border-primary-blue pb-2 mb-6 inline-block">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary-blue border-b-2 border-accent pb-2 mb-6 inline-block">
               About Us
             </h2>
             <p className="text-gray-700 mb-12 leading-relaxed text-base lg:text-lg max-w-3xl">

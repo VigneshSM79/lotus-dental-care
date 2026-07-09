@@ -1,8 +1,9 @@
 import Link from "next/link";
+import ToothBullet from "@/components/ui/ToothBullet";
 
 export default function SleepingDentistry() {
   return (
-    <main className="pt-24 bg-white">
+    <main className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-blue py-10">
         <div className="container mx-auto px-4">
@@ -23,7 +24,7 @@ export default function SleepingDentistry() {
           <div className="max-w-4xl mx-auto">
 
             {/* Title */}
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-primary-blue pb-2 mb-6 inline-block">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-accent pb-2 mb-6 inline-block">
               Sleeping Dentistry
             </h2>
 
@@ -53,19 +54,19 @@ export default function SleepingDentistry() {
             </p>
             <ul className="text-gray-600 leading-relaxed space-y-2 mb-8">
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Daytime fatigue and difficulty concentrating</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>High blood pressure and increased risk of heart disease</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Morning headaches and dry mouth</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Disrupted sleep for both the patient and their partner</span>
               </li>
             </ul>
@@ -87,19 +88,19 @@ export default function SleepingDentistry() {
             </p>
             <ul className="text-gray-600 leading-relaxed space-y-2 mb-8">
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Patients with high dental anxiety or dental phobia</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Patients with a sensitive gag reflex</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Long or complex procedures requiring extended chair time</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Patients who have difficulty sitting still for prolonged periods</span>
               </li>
             </ul>
