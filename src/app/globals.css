@@ -150,7 +150,7 @@ img {
   display: flex; align-items: center; justify-content: space-between; height: 78px;
 }
 .brand { display: flex; align-items: center; gap: 12px; }
-.brand .logo { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; }
+.brand .logo { width: 34px; height: 44px; border-radius: 8px; object-fit: contain; }
 .brand .name { font-family: var(--display); font-size: 20px; letter-spacing: 0.02em; color: var(--ink); }
 .brand .name b { font-weight: 600; }
 .brand .name small {
