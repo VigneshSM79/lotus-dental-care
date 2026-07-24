@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ServiceVideo from "@/components/ui/ServiceVideo";
 
 export default function CosmeticDentistry() {
   const intro = {
@@ -58,6 +59,12 @@ export default function CosmeticDentistry() {
                 {intro.description}
               </p>
             </div>
+
+            {/* Procedure Video */}
+            <ServiceVideo
+              src="/videos/cosmetic-dentistry.mp4"
+              title="Cosmetic Dentistry"
+            />
 
             {services.map((service, index) => (
               <div

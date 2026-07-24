@@ -43,6 +43,15 @@ export default function GeneralDentistry() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
+            {/* Intro Image */}
+            <div className="flex justify-center mb-12">
+              <img
+                src="/images/services/general-dentistry.jpg"
+                alt="General Dentistry at Lotus Dental Care"
+                className="rounded-lg w-full max-w-lg h-auto"
+              />
+            </div>
+
             {services.map((service, index) => (
               <div
                 key={service.title}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ToothBullet from "@/components/ui/ToothBullet";
+import ServiceVideo from "@/components/ui/ServiceVideo";
 
 export default function RootCanalTreatment() {
   return (
@@ -84,6 +85,13 @@ export default function RootCanalTreatment() {
                 className="rounded-lg w-full max-w-lg h-auto"
               />
             </div>
+
+            {/* Procedure Video */}
+            <ServiceVideo
+              src="/videos/root-canal-treatment.mp4"
+              title="Root Canal Treatment"
+              vertical
+            />
 
             {/* Success Rate */}
             <h4 className="text-lg font-bold text-gray-800 mb-3">

@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4>Visit</h4>
+            <h4>Contact</h4>
             <a href="tel:+917200849216">7200849216</a>
             <a href="mailto:lotusdentists@gmail.com">lotusdentists@gmail.com</a>
             <span style={{ display: "block", padding: "4px 0" }}>Mon–Sat · 10–1 &amp; 5–9</span>

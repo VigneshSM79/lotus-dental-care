@@ -23,7 +23,7 @@ export default function Header() {
       <header className="site-header">
         <div className="wrap">
           <Link className="brand" href="/">
-            <img className="logo" src="/images/logo.jpg" alt="Lotus Dental Care logo" />
+             <img className="logo" src="/images/logo.png" alt="Lotus Dental Care logo" />
             <span className="name">
               LOTUS <b>DENTAL CARE</b>
               <small>Multispeciality</small>

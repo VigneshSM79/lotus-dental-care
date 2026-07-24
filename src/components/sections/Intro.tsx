@@ -13,7 +13,7 @@ export default function Intro() {
         <p>
           From routine check-ups to root canals, implants and smile makeovers —
           specialist care in one calm, modern clinic with the latest technology
-          and a gentle, patient-first team.
+          and a gentle, patient-centric team.
         </p>
         <div className="cta">
           <a className="btn btn-gold" href="#contact">

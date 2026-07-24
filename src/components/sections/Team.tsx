@@ -10,25 +10,25 @@ export default function Team() {
           <h2>Experienced hands you can trust</h2>
         </div>
         <div className="team">
-          <div className="grid">
-            {doctors.map((doctor) => (
-              <article className="doc" key={doctor.id}>
-                <div className="doc-photo">
-                  <Image
-                    src={doctor.image}
-                    alt={`${doctor.name}, ${doctor.designation}`}
-                    width={800}
-                    height={1000}
-                  />
-                </div>
-                <div className="doc-info">
+          <article className="doc team-photo">
+            <div className="team-photo-img">
+              <Image
+                src="/images/team/doctors-together.jpg"
+                alt="Dr. R. Ragunathan and Dr. C. Pushya Mithra at Lotus Dental Care"
+                width={1536}
+                height={1024}
+              />
+            </div>
+            <div className="doc-info duo">
+              {doctors.map((doctor) => (
+                <div className="person" key={doctor.id}>
                   <h3>{doctor.name}</h3>
                   <div className="role">{doctor.designation}</div>
                   <div className="q">{doctor.qualifications}</div>
                 </div>
-              </article>
-            ))}
-          </div>
+              ))}
+            </div>
+          </article>
         </div>
       </div>
     </section>

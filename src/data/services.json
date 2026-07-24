@@ -4,7 +4,7 @@
     "title": "General Dentistry",
     "slug": "general-dentistry",
     "description": "Comprehensive dental care including regular check-ups, cleanings, and preventive treatments to maintain optimal oral health.",
-    "image": "/images/services/general-dentistry/scaling.jpg"
+    "image": "/images/services/general-dentistry.jpg"
   },
   {
     "id": 2,
@@ -61,12 +61,5 @@
     "slug": "sleeping-dentistry",
     "description": "Sedation dentistry options for anxious patients, ensuring comfortable and stress-free dental procedures.",
     "image": "/images/services/sleeping-dentistry.jpg"
-  },
-  {
-    "id": 10,
-    "title": "Extraction",
-    "slug": "extraction",
-    "description": "Safe and painless tooth extraction procedures, including simple and surgical extractions when necessary.",
-    "image": "/images/services/extraction.jpg"
   }
 ]

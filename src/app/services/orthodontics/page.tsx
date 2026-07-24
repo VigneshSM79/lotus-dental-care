@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ToothBullet from "@/components/ui/ToothBullet";
+import ServiceVideo from "@/components/ui/ServiceVideo";
 
 export default function Orthodontics() {
   return (
@@ -44,6 +45,12 @@ export default function Orthodontics() {
                 className="rounded-lg w-full max-w-lg h-auto"
               />
             </div>
+
+            {/* Procedure Video */}
+            <ServiceVideo
+              src="/videos/orthodontics.mp4"
+              title="Orthodontics"
+            />
 
             {/* Conditions Treated */}
             <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">

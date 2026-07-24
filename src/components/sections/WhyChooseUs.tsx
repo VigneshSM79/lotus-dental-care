@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
       <div className="wrap">
         <div className="head">
           <span className="eyebrow">Why patients choose us</span>
-          <h2>Dentistry that feels calm and careful</h2>
+          <h2>Precision in treatment. Compassion in care</h2>
         </div>
         <div className="grid">
           {features.map((f) => (
