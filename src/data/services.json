@@ -11,7 +11,7 @@
     "title": "Cosmetic Dentistry",
     "slug": "cosmetic-dentistry",
     "description": "Aesthetic treatments including teeth whitening, veneers, and smile makeovers to enhance your appearance and boost confidence.",
-    "image": "/images/services/cosmetic-dentistry.jpg"
+    "image": "/images/services/cosmetic-dentistry/smile-designing.jpg"
   },
   {
     "id": 3,
@@ -61,12 +61,5 @@
     "slug": "sleeping-dentistry",
     "description": "Sedation dentistry options for anxious patients, ensuring comfortable and stress-free dental procedures.",
     "image": "/images/services/sleeping-dentistry.jpg"
-  },
-  {
-    "id": 10,
-    "title": "Extraction",
-    "slug": "extraction",
-    "description": "Safe and painless tooth extraction procedures, including simple and surgical extractions when necessary.",
-    "image": "/images/services/extraction.jpg"
   }
 ]

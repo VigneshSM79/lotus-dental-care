@@ -13,10 +13,7 @@ export default function Contact() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -30,190 +27,127 @@ export default function Contact() {
       `*Email:* ${formData.email}\n` +
       `*Message:* ${formData.message || "N/A"}`;
 
-    const encodedText = encodeURIComponent(text);
-    const whatsappUrl = `https://wa.me/917200849216?text=${encodedText}`;
-
+    const whatsappUrl = `https://wa.me/917200849216?text=${encodeURIComponent(text)}`;
     window.open(whatsappUrl, "_blank");
-
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
 
   return (
-    <section id="contact" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              Contact Us
-            </h2>
-            <p className="text-xl text-gray-600">
-              Get in touch with us to schedule an appointment
-            </p>
-          </div>
+    <section className="sec panel" id="contact">
+      <div className="wrap">
+        <div className="head" style={{ maxWidth: "100%", textAlign: "center", margin: "0 auto 46px" }}>
+          <span className="eyebrow">Get in touch</span>
+          <h2>Book your appointment</h2>
+          <p style={{ marginLeft: "auto", marginRight: "auto" }}>
+            Call us, message on WhatsApp, or send the form below and we&rsquo;ll get back to you.
+          </p>
+        </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            {/* Contact Information */}
-            <div className="bg-gradient-to-br from-primary to-primary-blue text-white p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
+        <div className="contact-grid">
+          {/* Contact information */}
+          <div className="contact-info">
+            <h3>Visit us</h3>
 
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">📍</span>
-                  <div>
-                    <p className="font-semibold mb-1">Address</p>
-                    <p className="text-gray-200">
-                      LIG Phase I & II, Plot No:1853 TNHB,
-                      <br />
-                      Ayapakkam, Chennai - 600077
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">📞</span>
-                  <div>
-                    <p className="font-semibold mb-1">Phone</p>
-                    <a
-                      href="tel:+917200849216"
-                      className="text-gray-200 hover:text-white"
-                    >
-                      7200849216
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">✉️</span>
-                  <div>
-                    <p className="font-semibold mb-1">Email</p>
-                    <a
-                      href="mailto:lotusdentists@gmail.com"
-                      className="text-gray-200 hover:text-white"
-                    >
-                      lotusdentists@gmail.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🕐</span>
-                  <div>
-                    <p className="font-semibold mb-1">Hours</p>
-                    <p className="text-gray-200">
-                      Mon - Sat: 10:00 AM - 1:00 PM
-                      <br />
-                      Mon - Sat: 5:00 PM - 9:00 PM
-                    </p>
-                  </div>
+            <div className="row">
+              <span className="ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11Z" />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+              </span>
+              <div>
+                <div className="lbl">Address</div>
+                <div className="val">
+                  LIG Phase I &amp; II, Plot No:1853 TNHB,<br />
+                  Ayapakkam, Chennai 600077
                 </div>
               </div>
             </div>
 
-            {/* Contact Form */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">
-                Send Message
-              </h3>
+            <div className="row">
+              <span className="ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 18v4a16 16 0 0 1-15-18Z" />
+                </svg>
+              </span>
+              <div>
+                <div className="lbl">Phone</div>
+                <a className="val" href="tel:+917200849216">7200849216</a>
+              </div>
+            </div>
 
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-blue focus:border-transparent"
-                  />
+            <div className="row">
+              <span className="ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <rect x="3" y="5" width="18" height="14" rx="2" />
+                  <path d="m3 7 9 6 9-6" />
+                </svg>
+              </span>
+              <div>
+                <div className="lbl">Email</div>
+                <a className="val" href="mailto:lotusdentists@gmail.com">lotusdentists@gmail.com</a>
+              </div>
+            </div>
+
+            <div className="row" style={{ marginBottom: 0 }}>
+              <span className="ic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+              </span>
+              <div>
+                <div className="lbl">Hours</div>
+                <div className="val">
+                  Mon–Sat · 10:00 AM – 1:00 PM<br />
+                  &amp; 5:00 PM – 9:00 PM
                 </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-blue focus:border-transparent"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Phone Number *
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-blue focus:border-transparent"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-blue focus:border-transparent"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md transition-colors font-semibold flex items-center justify-center gap-2"
-                >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                  </svg>
-                  Book via WhatsApp
-                </button>
-              </form>
+              </div>
             </div>
           </div>
 
-          {/* Google Map */}
-          <div className="rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.8693855126803!2d80.1308311!3d13.1074599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526245bddd8a11%3A0x22d8755236dd395a!2sLotus%20Multispeciality%20Dental%20Care!5e0!3m2!1sen!2sin!4v1768884464382!5m2!1sen!2sin"
-              width="100%"
-              height="350"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Lotus Dental Care Location"
-              className="w-full"
-            ></iframe>
+          {/* Form */}
+          <div className="form-card">
+            <h3>Send a message</h3>
+            <form onSubmit={handleSubmit}>
+              <div className="field">
+                <label htmlFor="name">Full name *</label>
+                <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
+              </div>
+              <div className="field">
+                <label htmlFor="email">Email address *</label>
+                <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
+              </div>
+              <div className="field">
+                <label htmlFor="phone">Phone number *</label>
+                <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
+              </div>
+              <div className="field">
+                <label htmlFor="message">Message</label>
+                <textarea id="message" name="message" rows={4} value={formData.message} onChange={handleChange}></textarea>
+              </div>
+              <button type="submit" className="btn btn-gold" style={{ width: "100%", justifyContent: "center" }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.3-.8-2.8-1.2-4.6-4.1-4.7-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6c-.2.2-.3.4-.1.7.5.8 1 1.3 1.7 1.8.3.2.5.2.7 0l.6-.8c.2-.2.3-.2.6-.1l1.9.9c.2.1.4.2.4.4.1.2.1.8-.1 1.1Z" />
+                </svg>
+                Book via WhatsApp
+              </button>
+            </form>
           </div>
+        </div>
+
+        {/* Map */}
+        <div className="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.8693855126803!2d80.1308311!3d13.1074599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526245bddd8a11%3A0x22d8755236dd395a!2sLotus%20Multispeciality%20Dental%20Care!5e0!3m2!1sen!2sin!4v1768884464382!5m2!1sen!2sin"
+            width="100%"
+            height="360"
+            style={{ border: 0, display: "block" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Lotus Dental Care location"
+          ></iframe>
         </div>
       </div>
     </section>

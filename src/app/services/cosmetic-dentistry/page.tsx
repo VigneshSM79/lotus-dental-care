@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ServiceVideo from "@/components/ui/ServiceVideo";
 
 export default function CosmeticDentistry() {
   const intro = {
@@ -29,7 +30,7 @@ export default function CosmeticDentistry() {
   ];
 
   return (
-    <main className="pt-24 bg-white">
+    <main className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-blue py-10">
         <div className="container mx-auto px-4">
@@ -51,13 +52,19 @@ export default function CosmeticDentistry() {
 
             {/* Cosmetic Surgery — heading + description only, no image */}
             <div className="mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-primary-blue pb-2 mb-4 inline-block">
+              <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-accent pb-2 mb-4 inline-block">
                 {intro.title}
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg">
                 {intro.description}
               </p>
             </div>
+
+            {/* Procedure Video */}
+            <ServiceVideo
+              src="/videos/cosmetic-dentistry.mp4"
+              title="Cosmetic Dentistry"
+            />
 
             {services.map((service, index) => (
               <div

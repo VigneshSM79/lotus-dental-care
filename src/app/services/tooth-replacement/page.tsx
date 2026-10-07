@@ -1,8 +1,10 @@
 import Link from "next/link";
+import ToothBullet from "@/components/ui/ToothBullet";
+import ServiceVideo from "@/components/ui/ServiceVideo";
 
 export default function ToothReplacement() {
   return (
-    <main className="pt-24 bg-white">
+    <main className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-blue py-10">
         <div className="container mx-auto px-4">
@@ -23,7 +25,7 @@ export default function ToothReplacement() {
           <div className="max-w-4xl mx-auto">
 
             {/* Title */}
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-primary-blue pb-2 mb-6 inline-block">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-accent pb-2 mb-6 inline-block">
               Tooth Replacement
             </h2>
 
@@ -41,6 +43,13 @@ export default function ToothReplacement() {
               />
             </div>
 
+            {/* Procedure Video */}
+            <ServiceVideo
+              src="/videos/tooth-replacement.mp4"
+              title="Tooth Replacement"
+              vertical
+            />
+
             {/* Fixed Bridges */}
             <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
               Fixed Bridges
@@ -50,15 +59,15 @@ export default function ToothReplacement() {
             </p>
             <ul className="text-gray-600 leading-relaxed space-y-2 mb-8">
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Restores the appearance and function of missing teeth</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Cemented permanently — no removal required</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Proper flossing and hygiene are essential to prevent decay under the bridge</span>
               </li>
             </ul>
@@ -72,19 +81,19 @@ export default function ToothReplacement() {
             </p>
             <ul className="text-gray-600 leading-relaxed space-y-2 mb-8">
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Fused with the jawbone for a permanent, stable fit</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Preserves jawbone and prevents bone loss</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Does not require modification of adjacent healthy teeth</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Long-lasting solution with proper care and maintenance</span>
               </li>
             </ul>
@@ -98,15 +107,15 @@ export default function ToothReplacement() {
             </p>
             <ul className="text-gray-600 leading-relaxed space-y-2 mb-8">
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Removable for easy cleaning and maintenance</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>A cost-effective alternative when fixed options are not suitable</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Restores chewing function and facial appearance</span>
               </li>
             </ul>
@@ -120,19 +129,19 @@ export default function ToothReplacement() {
             </p>
             <ul className="text-gray-600 leading-relaxed space-y-2 mb-12">
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Relatively economical and accessible for most patients</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Easy to fabricate, adjust, and repair</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Restores a full smile and improves ability to chew and speak</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Can be relined or replaced as the jaw changes over time</span>
               </li>
             </ul>

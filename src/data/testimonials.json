@@ -1,23 +1,44 @@
 [
   {
     "id": 1,
-    "name": "[Patient Name]",
-    "occupation": "Business Professional",
-    "review": "Visited Lotus Dental and was impressed. They knew their job well and I got laser treatment for my gums done very efficiently and painless. Moreover they follow the Covid safety guidelines very strictly and the overall ambience provides comfort and safety!",
+    "name": "Nabeel NH",
+    "meta": "2 reviews · 7 months ago",
+    "review": "Doctors are very polite and kind. Charges are very economical and there are multiple visits where they didn't charge me for small consultations. Doctors are very thorough and don't recommend procedures unnecessarily. Overall very satisfied and would highly recommend this hospital for any dental consultation / procedure. Keep it up",
     "rating": 5
   },
   {
     "id": 2,
-    "name": "[Patient Name]",
-    "occupation": "Teacher",
-    "review": "Excellent dental care facility with modern equipment and highly skilled doctors. The staff is very friendly and professional. I had my root canal treatment done here and it was completely painless. Highly recommended!",
+    "name": "S C",
+    "meta": "Local Guide · 13 reviews · a year ago",
+    "review": "Doctors provide right advice and are experienced. Charge is economical compared to big chains. Have done root canal and scaling. Highly recommended.",
     "rating": 5
   },
   {
     "id": 3,
-    "name": "[Patient Name]",
-    "occupation": "Software Engineer",
-    "review": "Best dental clinic in the area! The doctors take time to explain everything and make you feel comfortable. I've been coming here for regular check-ups and cleanings for the past 2 years. Very satisfied with their service.",
+    "name": "B Selvamani",
+    "meta": "4 reviews · 7 months ago",
+    "review": "Highly recommended Dr. Ragunathan sir, had more experience in dental related. The best and simple clinic.",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "Kavipriya",
+    "meta": "1 review · 3 years ago",
+    "review": "Undoubtedly the best clinic in this part of the town. Excellent work ethics. Affordable and competitive pricing. Genuine one on one patient care and very clean. Heartfelt thanks to both the doctors.",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "name": "A. Nagarethinam",
+    "meta": "Local Guide · 41 reviews · 6 years ago",
+    "review": "Excellent doctor and good treatment. I had two teeth removed on yesterday night. But no swelling and no pain till now. Excellent approach.",
+    "rating": 5
+  },
+  {
+    "id": 6,
+    "name": "Vasanthakumar",
+    "meta": "Local Guide · 217 reviews · 4 years ago",
+    "review": "Good service, moderate charges, experienced doctors. We can give 5 star rating for this clinic. Dr. Ragunanthan is very experienced dentist, he doing service along with his wife, she also experienced dentist. I recommend all to go here for their dental problems.",
     "rating": 5
   }
 ]

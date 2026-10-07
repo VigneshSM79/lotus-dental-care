@@ -1,8 +1,10 @@
 import Link from "next/link";
+import ToothBullet from "@/components/ui/ToothBullet";
+import ServiceVideo from "@/components/ui/ServiceVideo";
 
 export default function RootCanalTreatment() {
   return (
-    <main className="pt-24 bg-white">
+    <main className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-blue py-10">
         <div className="container mx-auto px-4">
@@ -23,7 +25,7 @@ export default function RootCanalTreatment() {
           <div className="max-w-4xl mx-auto">
 
             {/* Title */}
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-primary-blue pb-2 mb-6 inline-block">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-accent pb-2 mb-6 inline-block">
               Root Canal Treatment
             </h2>
 
@@ -38,31 +40,31 @@ export default function RootCanalTreatment() {
             </h3>
             <ul className="text-gray-600 leading-relaxed space-y-2 mb-6">
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Spontaneous pain</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Feeling sensitive to hot and cold drinks and foods</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Pain while biting and chewing</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Facial swelling</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Loss of teeth</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Swelling of the gum near the affected tooth</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Oozing of pus surrounding the affected teeth</span>
               </li>
             </ul>
@@ -84,12 +86,19 @@ export default function RootCanalTreatment() {
               />
             </div>
 
+            {/* Procedure Video */}
+            <ServiceVideo
+              src="/videos/root-canal-treatment.mp4"
+              title="Root Canal Treatment"
+              vertical
+            />
+
             {/* Success Rate */}
             <h4 className="text-lg font-bold text-gray-800 mb-3">
               How successful are root canals?
             </h4>
             <p className="text-gray-600 leading-relaxed mb-8">
-              Root canal treatment is a highly successful procedure with more than 95% success rate. Most of the teeth attached to the root canal can last for a lifetime. The final step of the root canal procedure involves the application of a restoration such as crown or filling, it will not be visible to onlookers that a root canal was performed.
+              Root canal treatment is a highly successful procedure with more than 95% success rate. Most of the root canal treated teeth with crown can last for many years of life. The final step of the root canal procedure involves the application of a restoration such as crown or filling, it will not be visible to onlookers that a root canal was performed.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
               Laser root canal treatment saves the teeth from being extracted completely. Although the pulp has been removed, the tooth is still anchored in the bone and can still perform biting and chewing. Laser dental treatment makes the procedure quick, easy and painless.

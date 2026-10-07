@@ -1,8 +1,10 @@
 import Link from "next/link";
+import ToothBullet from "@/components/ui/ToothBullet";
+import ServiceVideo from "@/components/ui/ServiceVideo";
 
 export default function OralSurgery() {
   return (
-    <main className="pt-24 bg-white">
+    <main className="bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-blue py-10">
         <div className="container mx-auto px-4">
@@ -23,7 +25,7 @@ export default function OralSurgery() {
           <div className="max-w-4xl mx-auto">
 
             {/* Title */}
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-primary-blue pb-2 mb-6 inline-block">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-blue border-b-2 border-accent pb-2 mb-6 inline-block">
               Oral Surgery
             </h2>
 
@@ -43,6 +45,12 @@ export default function OralSurgery() {
                 className="rounded-lg w-full max-w-lg h-auto"
               />
             </div>
+
+            {/* Procedure Video */}
+            <ServiceVideo
+              src="/videos/oral-surgery.mp4"
+              title="Oral Surgery"
+            />
 
             {/* Common Procedures */}
             <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-6">
@@ -90,15 +98,15 @@ export default function OralSurgery() {
             </p>
             <ul className="text-gray-600 leading-relaxed space-y-2 mb-12">
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Routine and surgical extractions performed with care</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Multiple extractions possible in a single visit when required</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-primary-blue">❤</span>
+                <ToothBullet />
                 <span>Our surgical team makes every effort to minimise trauma to the jaw and mouth</span>
               </li>
             </ul>
