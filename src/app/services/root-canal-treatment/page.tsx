@@ -98,7 +98,7 @@ export default function RootCanalTreatment() {
               How successful are root canals?
             </h4>
             <p className="text-gray-600 leading-relaxed mb-8">
-              Root canal treatment is a highly successful procedure with more than 95% success rate. Most of the teeth attached to the root canal can last for a lifetime. The final step of the root canal procedure involves the application of a restoration such as crown or filling, it will not be visible to onlookers that a root canal was performed.
+              Root canal treatment is a highly successful procedure with more than 95% success rate. Most of the root canal treated teeth with crown can last for many years of life. The final step of the root canal procedure involves the application of a restoration such as crown or filling, it will not be visible to onlookers that a root canal was performed.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
               Laser root canal treatment saves the teeth from being extracted completely. Although the pulp has been removed, the tooth is still anchored in the bone and can still perform biting and chewing. Laser dental treatment makes the procedure quick, easy and painless.
